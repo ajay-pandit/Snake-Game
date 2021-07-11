@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background-color: rgb(60, 116, 74); */
+    background-image: url("images/background.jpg");
+}
+.body{
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("images/background.jpg");
+}
+
+.score{
+    position:absolute;
+    width: 150px;
+    height: 100px;
+    border:2px solid black;
+    margin-top: 30px;
+    margin-left: 85%;
+    background-color: rgb(145, 255, 0);
+    text-align: center;
+    padding: 7px;
+    font-size: 40px;
+}
+
+#board{
+    padding: 3px;
+    margin-top:13px;
+    background-color: rgb(25, 107, 36);
+    height: 95vmin;
+    width: 46%;
+    border: 2px solid black;
+    display: grid;
+    column-gap: 3px;
+    row-gap: 3px;
+    grid-template-columns: repeat(40,1fr);
+    grid-template-rows: repeat(40,1fr);
+}
+
+.head{
+    transform: scale(1.6);
+    background-color: rgba(6, 1, 7, 0.973);
+    border-radius: 100%;
+}
+
+.snake{
+    transform:scale(1.5);
+    border-top-left-radius: 40%;
+    border-top-right-radius:40%;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    background-color: rgb(77, 13, 16);
+}
+
+.food{
+    transform: scale(1.8);
+    border-radius: 50%;
+    background-repeat: round;
+    background-image: url("images/apple.png");
+}
